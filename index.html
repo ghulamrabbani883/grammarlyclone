@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grammarly Clone</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="heading">
+        <h2>Real Time Character Count</h2>
+      </div>
+      <div class="text">
+        <p>
+          Check your English Text for Grammar, spelling and punctuation errors
+          with thapa technicalreal time character count
+        </p>
+      </div>
+      <div class="textarea-div">
+        <textarea
+          name="textarea"
+          id="textarea"
+          maxlength="150"
+          placeholder="Enter text"
+        ></textarea
+        ><br />
+        <button onclick="copyText()">Copy text</button>
+      </div>
+      <div class="couter-container">
+        <p>Total counter : <span id="total-char">0</span></p>
+        <p>Remaining char : <span id="remaining-char">0</span></p>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
